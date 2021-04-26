@@ -1,0 +1,163 @@
+/*
+Theme Name: Justyna Kuta Theme
+Theme URI: justynakuta.pl
+Author: Justyna Kuta
+Author URI: https://justynakuta.pl
+Description: One page theme
+Requires at least: 5.3
+Tested up to: 5.6
+Requires PHP: 7.0
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: justynakuta
+
+*/
+/*
+  Bootstrap styles
+ */
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #aa8f87;
+  font-weight: 500;
+}
+
+/*
+  End Bootstrap styles
+ */
+svg {
+  fill: #86685f;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+b {
+  font-weight: 500;
+}
+
+a {
+  color: #aa8f87;
+}
+a:hover {
+  color: #86685f;
+}
+
+p {
+  color: #777575;
+}
+
+h1 span, h2 span {
+  color: #aa8f87;
+}
+
+a.navbar-brand {
+  font-weight: 100;
+}
+
+.wpjk_main {
+  background: #fff;
+}
+.wpjk_main img {
+  max-width: 100%;
+  filter: contrast(0.6) grayscale(0.45);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .wpjk_main-menu {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+.wpjk_main-menu.active {
+  color: #aa8f87;
+}
+
+.wpjk_skill-container {
+  padding: 25px;
+  margin: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  border: 3px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+.wpjk_skill-container:hover {
+  border-top: 3px solid #9a8883;
+}
+.wpjk_skill-container h3 {
+  font-size: 1.5rem;
+}
+.wpjk_skill-container p {
+  font-size: 14px;
+}
+
+.primary {
+  fill: #c1aba4;
+}
+
+.secondary {
+  fill: #9a8883;
+}
+
+.sticky-top {
+  background: rgba(255, 255, 255, 0.9);
+}
+.sticky-top.shadow {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+li.widget {
+  list-style: none;
+}
+
+.textwidget ul {
+  padding-left: 0;
+}
+
+.btn {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #aa8f87;
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #775c54;
+  box-shadow: none;
+}
+
+.wpjk_footer {
+  background-color: #383838;
+  color: #fff;
+}
+.wpjk_footer svg {
+  height: 30px;
+}
+.wpjk_footer a {
+  color: #adadad;
+}
+.wpjk_footer .wpjk_copyright-info {
+  box-shadow: inset 0 2px 0 #847e7d26, 0 -2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wpjk_footer-menu ul {
+  display: flex;
+  padding-left: 0;
+}
+.wpjk_footer-menu ul li {
+  list-style: none;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+img.wp-post-image {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  filter: contrast(0.8);
+}
+
+.wpjk_blog h2 {
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
