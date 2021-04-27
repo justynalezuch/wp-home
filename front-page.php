@@ -3,19 +3,23 @@
 <?php get_sidebar(); ?>
 
 <main class="row">
-    <div class="col-12 wpjk_main">
+    <section class="col-12 wpjk_main">
         <img src="<?php echo get_bloginfo('template_directory') ?>/img/web-img-2.jpg" alt="Main content picture">
         <div class="text-center py-5">
-            <h1 class="mb-3">Jestem programistką, <span>web developerem</span></h1>
+            <header>
+                <h1 class="mb-3">Jestem programistką, <span>web developerem</span></h1>
+            </header>
             <?php dynamic_sidebar('front_page_main_text') ?>
-            <a href="">Czytaj więcej o mnie...</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'o-mnie' ) ) ?>">Czytaj więcej o mnie...</a>
         </div>
-    </div>
+    </section>
 
     <section class="col-12 text-center py-5 mt-4">
         <div class="row">
             <div class="col-12">
-                <h2 class="mb-4">W czym mogę Ci <span>pomóc?</span></h2>
+                <header>
+                    <h2 class="mb-4">W czym mogę Ci <span>pomóc?</span></h2>
+                </header>
             </div>
             <div class="col-md-4">
                 <div class="wpjk_skill-container">
@@ -39,13 +43,9 @@
         </div>
     </section>
 
-    <section class="col-12 row text-center py-5 mt-4">
-
-    </section>
-
-    <div class="col-12 row">
-        <?php get_template_part('content') ?>
-    </div>
+<!--    <div class="col-12 row">-->
+<!--        --><?php //get_template_part('content') ?>
+<!--    </div>-->
 </main>
 
 <?php get_footer(); ?>

@@ -20,11 +20,11 @@
                 </a>
                 <article class="p-2">
                     <span class="date"><?php the_date() ?></span>
-                    <header>
                         <a href="<?php the_permalink(); ?>" alt="Go to <?php the_title() ?>">
-                            <h2><?php the_title() ?></h2>
+                            <header>
+                                <h2><?php the_title() ?></h2>
+                            </header>
                         </a>
-                    </header>
                     <?php
                     $content = get_the_content();
 
