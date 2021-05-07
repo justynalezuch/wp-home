@@ -21,6 +21,10 @@ Text Domain: justynakuta
   font-weight: 500;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 b, strong {
   font-weight: 500;
 }
@@ -45,7 +49,7 @@ a:hover {
   color: #86685f;
 }
 
-p {
+p, li {
   color: #777575;
 }
 
@@ -55,6 +59,12 @@ h1 span, h2 span {
 
 h1 {
   color: #434343;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 a.navbar-brand {
@@ -151,16 +161,30 @@ li.widget {
   display: flex;
   padding-left: 0;
 }
+@media only screen and (max-width: 450px) {
+  .wpjk_footer-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .wpjk_footer-menu ul li {
   list-style: none;
   margin-right: 20px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 450px) {
+  .wpjk_footer-menu ul li {
+    margin-bottom: 15px;
+  }
+}
+.wpjk_footer-menu a {
+  color: #948686;
+}
 
 img.wp-post-image {
   width: 100%;
   object-fit: cover;
-  height: 300px;
+  height: 400px;
   filter: contrast(0.8);
 }
 
@@ -207,6 +231,42 @@ iframe {
   .technology-stack img {
     max-width: 100px;
   }
+}
+
+.cite {
+  position: relative;
+  background-color: #ddd2cf;
+}
+.cite:before, .cite:after {
+  content: "";
+  position: absolute;
+  background-color: #ddd2cf;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+}
+.cite:after {
+  right: -999px;
+  left: 0;
+}
+.cite:before {
+  left: -999px;
+  right: 0;
+}
+
+.wp-block-syntaxhighlighter-code {
+  padding: 10px 10px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.wpjk_single-post h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.date {
+  color: #777575;
 }
 
 /*# sourceMappingURL=style.css.map */

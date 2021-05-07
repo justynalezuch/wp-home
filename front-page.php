@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 
 <main class="row">
     <section class="col-12 wpjk_main">
@@ -43,9 +43,15 @@
         </div>
     </section>
 
-<!--    <div class="col-12 row">-->
-<!--        --><?php //get_template_part('content') ?>
-<!--    </div>-->
+    <section class="col-12 py-5 text-center cite">
+        <blockquote class="blockquote">
+            <p class="mb-0">Jest tylko jeden sposób aby zrobić wielką pracę - pokochać ją.</p>
+            <footer class="blockquote-footer"><cite title="Source Title">Steve Jobs</cite></footer>
+        </blockquote>
+    </section>
+
+
+
 </main>
 
 <?php get_footer(); ?>

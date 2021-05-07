@@ -4,13 +4,15 @@
 <article class="py-4">
     <header>
         <h1 class="mb-4">
-            <?php the_title(); ?>
+            <?php if(get_the_title()): the_title(); endif; ?>
         </h1>
     </header>
-    <?php the_content(); ?>
+    <div class="py-2">
+        <?php the_content(); ?>
+    </div>
 
 </article>
-<?php if(is_page(52)) : ?>
+<?php if(is_page(41)) : ?>
 <div class="technology-stack justify-content-center mb-4">
     <img src="<?php echo get_bloginfo('template_directory') ?>/img/technology-stack(1).jpg" alt="">
     <img src="<?php echo get_bloginfo('template_directory') ?>/img/php.jpg" alt="">

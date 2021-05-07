@@ -15,22 +15,22 @@
     ?>
     <span class="date"><?php echo get_the_date() ?></span>
 
-    <div class="py-4">
+    <div class="py-4 wpjk_single-post">
         <?php the_content(); ?>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <?php if (strlen(get_previous_post()->post_title) > 0) { ?>
-                <p><?php previous_post_link() ?></p>
-            <?php } ?>
-        </div>
-        <div class="col text-right">
-            <?php if (strlen(get_next_post()->post_title) > 0) { ?>
-                <p><?php next_post_link() ?></p>
-            <?php } ?>
-        </div>
-    </div>
+<!--    <div class="row">-->
+<!--        <div class="col">-->
+<!--            --><?php //if (strlen(get_previous_post()->post_title) > 0) { ?>
+<!--                <p>--><?php //previous_post_link() ?><!--</p>-->
+<!--            --><?php //} ?>
+<!--        </div>-->
+<!--        <div class="col text-right">-->
+<!--            --><?php //if (strlen(get_next_post()->post_title) > 0) { ?>
+<!--                <p>--><?php //next_post_link() ?><!--</p>-->
+<!--            --><?php //} ?>
+<!--        </div>-->
+<!--    </div>-->
 </article>
 
 <?php get_footer(); ?>
